@@ -13,6 +13,3 @@ def count_appearance(path_to_file: str, word=None, *args, **kwargs) -> str:
         appearance_cnt = f.read().count(word)
     
     return appearance_cnt if appearance_cnt else 'не встретилось'
-
-
-print(count_appearance('testfile.txt', 'hello'))
